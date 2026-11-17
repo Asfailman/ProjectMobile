@@ -27,11 +27,8 @@ class MainActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             } else {
-                Toast.makeText(
-                    this,
-                    "Login button clicked!",
-                    Toast.LENGTH_SHORT
-                ).show()
+                val intent = android.content.Intent(this, ListActivity::class.java)
+                startActivity(intent)
             }
         }
     }
